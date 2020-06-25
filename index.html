@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Planner</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="plan">
+                <div class="plan__title">
+                    Your Plans for <span class="plan__title--month">%Month%</span>:
+                </div>
+                
+                
+                
+                <div class="plan__todo clearfix">
+                    <div class="plan__todo--text">TASKS LEFT</div>
+                    <div class="right">
+                        <div class="plan__todo--value">0</div>
+                        
+                    </div>
+                </div>
+                
+                <div class="plan__notes clearfix">
+                    <div class="plan__notes--text">TOTAL NOTES</div>
+                    <div class="right clearfix">
+                        <div class="plan__notes--value">0</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <select class="add__type">
+                        <option value="t" selected>Task</option>
+                        <option value="n">Note</option>
+                    </select>
+                    <textarea class="add__notetask" name="add__notetask" placeholder="Add Your Notes or Tasks here" cols="8"  wrap="hard"></textarea>
+                    
+                    <select class="add__value">
+                    <option value="--" selected>--</option>
+                    <option value="IMP">IMP</option>
+                    
+                </select>
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container clearfix">
+                <div class="todolist">
+                    <h2 class="todo__title">TO-DO LIST</h2>
+                    
+                    <div class="todo__list">
+                       
+                            
+                    </div>
+                </div>
+                
+                
+                
+                <div class="notes">
+                    <h2 class="notes__title">NOTES</h2>
+                    
+                    <div class="notes__list">
+                       
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
